@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        header{
+            margin-left: 40px;
+        }
+        aside {
+            width: 30%;
+            padding-left: 5px;
+            margin-left: 5px;
+            float: left;
+        }
+        
+        main{
+            width: 60%;
+            float: right;
+        }
+        .contenedor{
+            margin: 0 auto;
+            max-width: 700px;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        nav a{
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            color: darkslategrey;
+        }
+
+        nav a:hover{
+            color: aquamarine;
+        }
+
+        iframe{
+            width: 350px;
+            height: 700px;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hoja de Vida</title>
+</head>
+    
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>Juan Camilo Clavijo Dominguez</h1>
+        </header>
+
+        <nav>
+                <a href="Perfil.html" target="iframeDetails">Perfil</a>
+                <a href="Estudios.html" target="iframeDetails">Estudios</a>
+                <a href="Habilidades.html" target="iframeDetails">Habilidades</a>
+                <a href="contacto.html" target="iframeDetails">Contacto</a>
+        </nav>
+
+        <aside>
+            <img src="img/icono.jpg" alt="Foto" width="200px">
+        </aside>
+
+        <main>
+            <iframe id="iframeDetails" name="iframeDetails" src="Perfil.html" width="50%" height="350"
+                style="border: none;"></iframe>
+        </main>
+    </div>
+</body>
+
+</html>
