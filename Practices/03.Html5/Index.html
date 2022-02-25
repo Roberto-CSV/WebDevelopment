@@ -15,6 +15,12 @@
         overflow:hidden;
         padding:10px;
       }
+      #navbar{
+        margin: auto;
+        width: 100%;
+        border: 3px solid rgb(175, 175, 175);
+        padding: 10px;
+      }
 
       ul{
         padding:0;
@@ -50,6 +56,10 @@
         clear:both;
       }
 
+      li:active{
+        background-color: rgb(85, 103, 104);
+      }
+
     </style>
   </head>
   <body>
@@ -57,7 +67,7 @@
       <header>
         <h1>David Alejandro Garrido</h1>
       </header>
-      <nav>
+      <nav id="navbar">
         <ul>
           <li><a href="./Profile.html" target="iframeDetails">Profile</a></li>
           <li><a href="./Studies.html" target="iframeDetails">Studies</a></li>
