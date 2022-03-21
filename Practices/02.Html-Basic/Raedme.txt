@@ -1,1 +1,4 @@
 Crear un Login Simple con HTML
+
+- Hay Doimplementaciones de lo mismo, Caul Reviso?
+- En la segunda implemntacion por que se eliminaron los place holder?
