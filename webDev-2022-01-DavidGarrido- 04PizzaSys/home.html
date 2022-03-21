@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Inicio - PizzaSys</title>
+</head>
+
+<body style="height: 100vh;">
+    <header class="p-3 mb-1 border-bottom border-5 border-danger">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <!-- LOGO -->
+                <a href="#" class="text-decoration-none">
+                    <img src="./pizza.png" class="mx-auto d-block" height="120" alt="icon-pizza">
+                </a>
+
+                <!-- Bar search -->
+                <form class="col-5 ">
+                    <div class="input-group" id="search-input">
+                        <input class="form-control py-2 border-right-0 border-3" type="search"
+                            value="Busca la pizza que deseas">
+                        <button type="button" class="btn border text-white" style="background: orangered;">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Car -->
+                <a href="#" class="d-flex flex-row link-dark text-decoration-none align-items-center"
+                    style="font-size: 1.3rem;">
+                    <Strong class="px-2" style="color: red;">1</Strong>
+                    <i class="bi bi-cart" style="font-size: 3rem;"></i>
+                </a>
+
+
+                <!-- Sesion -->
+                <a href="#" class="d-flex flex-row link-dark text-decoration-none align-items-center"
+                    style="font-size: 1.3rem;">
+                    <Strong class="px-4">Ingresar</Strong>
+                    <i class="bi bi-person-circle" style="font-size: 3rem;"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-3 m-4 p-2 border border-secondary rounded-3 border-3">
+                <img src="/pi1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <div class="row dropdown align-items-center">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Escoger tamaño
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Pequeña $15.000</a></li>
+                            <li><a class="dropdown-item" href="#">Mediana $22.000</a></li>
+                            <li><a class="dropdown-item" href="#">Grande $35.000</a></li>
+                        </ul>
+                    </div>
+                    <h5 class="card-title mt-3">Pizza Peperoni</h5>
+                    <p class="card-text">Pizza con peperoni, salsa especial y queso</p>
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
