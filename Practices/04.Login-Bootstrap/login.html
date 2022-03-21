@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Login - PizzaSys</title>
+</head>
+
+<body>
+    <div class="container col-6" style="height: 100vh">
+        <!-- ICON -->
+        <div class="row align-content-end p-5 icon">
+            <div class="col-lg icon-pizza">
+                <img src="./pizza.png" class="mx-auto d-block" alt="icon-pizza">
+            </div>
+        </div>
+        <!-- FORM -->
+        <div class="row login">
+            <div class="col-lg login-form">
+                <form>
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <input type="email" id="email" class="form-control rounded-3 border border-dark border-2"
+                            placeholder="Correo Electrónico" />
+                    </div>
+
+                    <!-- Password input -->
+                    <div class="form-outline mb-4">
+                        <input type="password" id="password" class="form-control rounded-3 border border-dark border-2"
+                            placeholder="Contraseña" />
+                    </div>
+
+                    <!-- Login button -->
+                    <button type="submit" class="form-control btn btn-danger btn-block" id="sesion"><strong>Iniciar
+                            sesión</strong></button>
+
+                    <!-- Register side -->
+                    <div class="col d-flex justify-content-center mt-5 register">
+                        <label class="form-check-label">
+                            <strong>
+                                ¿Aún no tienes cuenta?
+                                <span style="color: red;">Registrate</span>
+                            </strong>
+                        </label>
+                    </div>
+
+                    <button type="button" class="btn btn-secondary btn-sm mt-4" id="volver">
+                        <i class="bi bi-arrow-left-square-fill text-light"></i> Volver
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
