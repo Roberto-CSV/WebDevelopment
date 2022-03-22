@@ -1,1 +1,12 @@
 Mejorar el Login inicial pero ahora con componentes de Boostrap
+
+Funcionalidad 
++ Login (OK)
+- No hay Register
+Se abona que usa el login dentro del proyecto de la Tienda Virtual
+
+Codigo
+- Faltan Id en las referencias (href))
+- LAs Imagenes es mejor importarlas localmente para no depender de otros sitios
+
+
