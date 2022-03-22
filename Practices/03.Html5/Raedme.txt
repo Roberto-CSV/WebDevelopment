@@ -1,1 +1,16 @@
 Crear una pagina con componentes de HTML para mostrar su Curriculum
+
++ Funcional se ve bien
+
+Index (OK)
+
+Perfil (OK)
+- Existe un H1 sin texto 
+
+Estudios (OK)
+- Existe un H1 sin texto 
+
+Habilidades (OK)
+
+Contacto (OK)
+- El telefono tiene un tipo tel que deberia ser un Text
