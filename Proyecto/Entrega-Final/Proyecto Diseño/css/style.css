@@ -1,0 +1,29 @@
+@import "bourbon";
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Orelega One', cursive;
+}
+
+
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2{
+    margin:5px 0 15px 0 ;
+}
+
+
+/* RECOMENDADOS  INDEX */
+
+
+
