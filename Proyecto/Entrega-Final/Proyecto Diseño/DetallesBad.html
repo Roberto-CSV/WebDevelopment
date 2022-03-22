@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>ShopWeb</title>
+</head>
+
+<body>
+    <header class="bg-dark">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand " href="#">
+                        <div class="d-flex align-items-center">
+                            <a href="index.html"><img src="img/car.png" alt="logo" width="83px" height="56px"></a>
+                            <a href="index.html"><img src="img/ShopWeb.png" alt="logo" height="" class="mx-2"></a>
+                        </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse flex-row-reverse justify-content-start" id="navbarScroll">
+                        <ul class="navbar-nav  my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white fs-3 px-5" href="#"
+                                    id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Categorias
+                                </a>
+                                <ul class="dropdown-menu mx-5" aria-labelledby="navbarScrollingDropdown">
+                                    <li><a class="dropdown-item" href="#">Hombre</a></li>
+                                    <li><a class="dropdown-item" href="#">Mujer</a></li>
+                                    <li><a class="dropdown-item" href="#">Deportivo</a></li>
+                                    <li><a class="dropdown-item" href="#">Material</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fs-3 text-white" href="login.html">Ingresar</a>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex input-group w-auto">
+                            <input type="search" class="form-control" placeholder="Buscar" aria-label="Search" />
+                            <button class="btn btn-outline-primary bg-secondary border-0" type="button"
+                                data-mdb-ripple-color="dark">
+                                <i class="bi bi-search text-white"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <h1><a href="indexL.html" class="link-dark text-uppercase fw-bold text-decoration-none">Inicio</a> |
+                        <a href="#" class="link-dark text-uppercase fw-bold text-decoration-none">Detalles</a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        <section class=" px-4 mb-5">
+            <div class="row gx-4 gx-lg-5 align-items-center">
+                <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0"
+                        src="https://cf.shopee.com.co/file/7c57eb47e97123358f65720342918bf9" alt="..."></div>
+                <div class="col-md-6">
+                    <div class="small mb-1">Zapatillas</div>
+                    <h1 class="display-5 fw-bolder">Bad bunny X Adidas</h1>
+                    <div class="d-flex">
+                        <i class="text-warning fs-1 bi bi-star-fill"></i>
+                        <i class="text-warning fs-1 bi bi-star-fill"></i>
+                        <i class="text-warning fs-1 bi bi-star-fill"></i>
+                        <i class="text-warning fs-1 bi bi-star-fill"></i>
+                        <i class="text-warning fs-1 bi bi-star-half"></i>
+                    </div>
+                    <div class="fs-5 mb-4">
+                        <span class="text-decoration-line-through bg-danger">$340.000</span>
+                        <span class="text-success fs-3">$300.000</span>
+                    </div>
+                    <p class="lead">El deporte y el estilo van de la mano. Estos tenis adidas le imprimen energía a tu
+                        look diario, gracias a sus elegantes y chic detalles en satén. El icónico exterior de cuero y la
+                        tira ajustable de cierre por contacto en el tobillo rinden homenaje a los grandes que han estado
+                        luciendo los Bad bunny desde el primer día.</p>
+                    <div class="d-flex">
+                        <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1"
+                            style="max-width: 3rem">
+                        <a href="login.html"><button class="btn btn-outline-dark flex-shrink-0" type="button">
+                                <i class="bi-cart-fill me-1"></i>
+                                Agregar al carrito
+                            </button></a>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="bi bi-facebook"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="bi bi-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="bi bi-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="bi bi-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="bi bi-linkedin"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="bi bi-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright: ShopWeb
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
