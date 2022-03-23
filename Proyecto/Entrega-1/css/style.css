@@ -13,6 +13,11 @@ body{
 
 
 
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 h2{
     margin:5px 0 15px 0 ;
 }
