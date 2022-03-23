@@ -1,1 +1,5 @@
 Crear una pagina con componentes de HTML para mostrar su Curriculum
+
+- Fala el formulario de Contacto
+- No se utiliza el iframe, sino recopia del formulario
+- Faltan los Ids
