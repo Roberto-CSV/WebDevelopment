@@ -1,1 +1,4 @@
 Mejorar el Login inicial pero ahora con componentes de Boostrap
+
+- La contraseña no es de tipo password
+- Falta el formulario de registro
