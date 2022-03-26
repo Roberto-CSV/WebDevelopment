@@ -11,10 +11,10 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <title>Inicio - PizzaSys</title>
+    <title>Carrito - PizzaSys</title>
 </head>
 
-<body style="height: 100vh;">
+<body>
     <header class="p-3 mb-1 border-bottom border-5 border-danger">
         <div class="container">
             <div class="d-flex align-items-center justify-content-between">
@@ -51,29 +51,45 @@
             </div>
         </div>
     </header>
-    <main class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-3 m-4 p-2 border border-secondary rounded-3 border-3">
-                <img src="/pi1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <div class="row dropdown align-items-center">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Escoger tamaño
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Pequeña $15.000</a></li>
-                            <li><a class="dropdown-item" href="#">Mediana $22.000</a></li>
-                            <li><a class="dropdown-item" href="#">Grande $35.000</a></li>
-                        </ul>
-                    </div>
-                    <h5 class="card-title mt-3">Pizza Peperoni</h5>
-                    <p class="card-text">Pizza con peperoni, salsa especial y queso</p>
-
-                </div>
+    <div class="container">
+        <div class="row justify-content-center align-content-center">
+            <div class="col-auto">
+                <table class="table table-borderless text-center" style="border-spacing: 3rem; border-collapse: separate;">
+                    <thead>
+                        <tr class="text-danger">
+                            <th></th>
+                            <th>
+                                <h3>Nombre</h3>
+                            </th>
+                            <th>
+                                <h3>Cantidad</h3>
+                            </th>
+                            <th>
+                                <h3>Valor</h3>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="align-middle">
+                        <tr>
+                            <td><img src="./pide2.jpg" alt="pizza" height="150"></td>
+                            <td><h5><strong>Pizza Peperoni</strong></h5></td>
+                            <td><h5><Strong>1</Strong></h5></td>
+                            <td><h5><strong>$25.000</strong></h5></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-    </main>
+        <div class="row flex-row justify-content-end align-content-center">
+            <div class="col-6">
+                <button class="btn btn-danger p-2 px-5"><strong>Pagar</strong></button>
+                <div class="d-inline-block px-5">
+                    <h5><strong><u>Total</u> $25.000</strong></h5>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
