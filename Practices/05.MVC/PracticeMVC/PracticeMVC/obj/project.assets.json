@@ -6232,19 +6232,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\clavi\\.nuget\\packages\\": {}
+    "C:\\Users\\salas\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\clavi\\Desktop\\PracticeMVC\\PracticeMVC\\PracticeMVC.csproj",
+      "projectUniqueName": "C:\\Users\\salas\\Documents\\GitHub\\WebDevelopment\\Practices\\05.MVC\\PracticeMVC\\PracticeMVC\\PracticeMVC.csproj",
       "projectName": "PracticeMVC",
-      "projectPath": "C:\\Users\\clavi\\Desktop\\PracticeMVC\\PracticeMVC\\PracticeMVC.csproj",
-      "packagesPath": "C:\\Users\\clavi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\clavi\\Desktop\\PracticeMVC\\PracticeMVC\\obj\\",
+      "projectPath": "C:\\Users\\salas\\Documents\\GitHub\\WebDevelopment\\Practices\\05.MVC\\PracticeMVC\\PracticeMVC\\PracticeMVC.csproj",
+      "packagesPath": "C:\\Users\\salas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\salas\\Documents\\GitHub\\WebDevelopment\\Practices\\05.MVC\\PracticeMVC\\PracticeMVC\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\clavi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\salas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6293,7 +6297,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
