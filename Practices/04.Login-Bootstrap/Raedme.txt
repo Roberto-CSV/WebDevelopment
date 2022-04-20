@@ -1,4 +1,10 @@
 Mejorar el Login inicial pero ahora con componentes de Boostrap
 
+<<<<<<< HEAD
 - falta el Formulario de Registro
 - Falta Id del Boton
+=======
+- Falta la Pagina de Registro
+- Falta el Id del Boton
+- Mal Organizada la pagina Nohay Body
+>>>>>>> main
