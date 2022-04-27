@@ -1,34 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\salas\\Desktop\\PracticeMVC\\PracticeMVC\\PracticeMVC.csproj": {}
+    "C:\\Users\\Salas\\Documents\\GitHub\\WebDevelopment\\Practices\\05.MVC\\PracticeMVC\\PracticeMVC\\PracticeMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\salas\\Desktop\\PracticeMVC\\PracticeMVC\\PracticeMVC.csproj": {
+    "C:\\Users\\Salas\\Documents\\GitHub\\WebDevelopment\\Practices\\05.MVC\\PracticeMVC\\PracticeMVC\\PracticeMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\salas\\Desktop\\PracticeMVC\\PracticeMVC\\PracticeMVC.csproj",
+        "projectUniqueName": "C:\\Users\\Salas\\Documents\\GitHub\\WebDevelopment\\Practices\\05.MVC\\PracticeMVC\\PracticeMVC\\PracticeMVC.csproj",
         "projectName": "PracticeMVC",
-        "projectPath": "C:\\Users\\salas\\Desktop\\PracticeMVC\\PracticeMVC\\PracticeMVC.csproj",
-        "packagesPath": "C:\\Users\\salas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\salas\\Desktop\\PracticeMVC\\PracticeMVC\\obj\\",
+        "projectPath": "C:\\Users\\Salas\\Documents\\GitHub\\WebDevelopment\\Practices\\05.MVC\\PracticeMVC\\PracticeMVC\\PracticeMVC.csproj",
+        "packagesPath": "C:\\Users\\Salas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Salas\\Documents\\GitHub\\WebDevelopment\\Practices\\05.MVC\\PracticeMVC\\PracticeMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\salas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Salas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.1"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.1": {
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -39,34 +41,37 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.1": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
-            "Microsoft.AspNetCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.1.1, )",
-              "autoReferenced": true
-            },
-            "Microsoft.AspNetCore.Razor.Design": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.1.2, )"
-            },
-            "Microsoft.NETCore.App": {
-              "target": "Package",
-              "version": "[2.1.0, )",
-              "autoReferenced": true
-            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[2.1.10, )"
+              "version": "[5.0.2, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[107.3.0, )"
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

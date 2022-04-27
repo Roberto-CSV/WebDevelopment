@@ -4,47 +4,45 @@
     ViewData["Title"] = "Details";
 }
 
-<h2>Details</h2>
+<h1>Details</h1>
 
 <div>
-    <h4>PersonModel</h4>
+    <h4>Person</h4>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
+    <dl class="row">
+        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Id)
         </dt>
-        <dd>
+        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Id)
         </dd>
-        <dt>
+        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.FirstName)
         </dt>
-        <dd>
+        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.FirstName)
         </dd>
-        <dt>
+        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.LastName)
         </dt>
-        <dd>
+        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.LastName)
         </dd>
-        <dt>
+        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.DateOfBirth)
         </dt>
-        <dd>
+        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.DateOfBirth)
         </dd>
-        <dt>
+        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Sex)
         </dt>
-        <dd>
+        <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Sex)
         </dd>
     </dl>
 </div>
 <div>
-    <div>
-        <a class="btn btn-outline-primary" asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
-        <a asp-action="Index" class="btn btn-outline-info">Back to List</a>
-    </div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
 </div>
