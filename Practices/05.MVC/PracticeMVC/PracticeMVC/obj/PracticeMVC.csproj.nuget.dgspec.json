@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\David\\Escritorio\\WebDevelopment-2022-01-rosdiamen\\WebDevelopment-2022-01-rosdiamen\\Practices\\05.MVC\\PracticeMVC\\PracticeMVC\\PracticeMVC.csproj": {}
+    "C:\\Users\\David\\Escritorio\\Semestre_X\\Des.Web\\Repositorio\\Practices\\05.MVC\\PracticeMVC\\PracticeMVC\\PracticeMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\David\\Escritorio\\WebDevelopment-2022-01-rosdiamen\\WebDevelopment-2022-01-rosdiamen\\Practices\\05.MVC\\PracticeMVC\\PracticeMVC\\PracticeMVC.csproj": {
+    "C:\\Users\\David\\Escritorio\\Semestre_X\\Des.Web\\Repositorio\\Practices\\05.MVC\\PracticeMVC\\PracticeMVC\\PracticeMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\David\\Escritorio\\WebDevelopment-2022-01-rosdiamen\\WebDevelopment-2022-01-rosdiamen\\Practices\\05.MVC\\PracticeMVC\\PracticeMVC\\PracticeMVC.csproj",
+        "projectUniqueName": "C:\\Users\\David\\Escritorio\\Semestre_X\\Des.Web\\Repositorio\\Practices\\05.MVC\\PracticeMVC\\PracticeMVC\\PracticeMVC.csproj",
         "projectName": "PracticeMVC",
-        "projectPath": "C:\\Users\\David\\Escritorio\\WebDevelopment-2022-01-rosdiamen\\WebDevelopment-2022-01-rosdiamen\\Practices\\05.MVC\\PracticeMVC\\PracticeMVC\\PracticeMVC.csproj",
+        "projectPath": "C:\\Users\\David\\Escritorio\\Semestre_X\\Des.Web\\Repositorio\\Practices\\05.MVC\\PracticeMVC\\PracticeMVC\\PracticeMVC.csproj",
         "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\David\\Escritorio\\WebDevelopment-2022-01-rosdiamen\\WebDevelopment-2022-01-rosdiamen\\Practices\\05.MVC\\PracticeMVC\\PracticeMVC\\obj\\",
+        "outputPath": "C:\\Users\\David\\Escritorio\\Semestre_X\\Des.Web\\Repositorio\\Practices\\05.MVC\\PracticeMVC\\PracticeMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[5.0.2, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[107.3.0, )"
             }
           },
           "imports": [
@@ -55,6 +59,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.16, 5.0.16]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -63,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
