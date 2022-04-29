@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ReminderMVC.Models;
 using ReminderMVC.Services;
 
 namespace ReminderMVC.Controllers
@@ -57,10 +58,11 @@ namespace ReminderMVC.Controllers
         // POST: CategorieController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(CategorieModel category)
         {
             try
             {
+                _categorieService.Update(category);
                 return RedirectToAction(nameof(Index));
             }
             catch

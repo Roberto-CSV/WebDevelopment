@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using ReminderMVC.Models;
 using RestSharp;
+using System;
 using System.Collections.Generic;
 
 namespace ReminderMVC.Services
@@ -44,7 +45,11 @@ namespace ReminderMVC.Services
 
         public void Update(CategorieModel category)
         {
-            throw new System.NotImplementedException();
+            var request = new RestRequest(category.Id.ToString(), Method.Put) { RequestFormat = DataFormat.Json };
+            request.AddBody(category);
+            var response = restClient.ExecuteAsync<CategorieModel>(request);
+
+            Console.WriteLine(response);
         }
     }
 }

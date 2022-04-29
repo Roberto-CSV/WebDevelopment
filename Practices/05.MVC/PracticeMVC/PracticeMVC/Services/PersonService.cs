@@ -61,11 +61,8 @@ namespace PracticeMVC.Services
         public void Update(PersonModel person)
         {
             var request = new RestRequest(person.Id.ToString(), Method.Put) { RequestFormat = DataFormat.Json };
-            //request.AddParameter("id", person.Id.ToString(), ParameterType.UrlSegment);
             request.AddBody(person);
-
             var response = restClient.ExecuteAsync<PersonModel>(request);
-
 
             Console.WriteLine(response);
         }
