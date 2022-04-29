@@ -21,7 +21,11 @@ namespace ReminderMVC.Services
 
         public void Add(CategorieModel category)
         {
-            throw new System.NotImplementedException();
+            var request = new RestRequest(string.Empty, Method.Post) { RequestFormat = DataFormat.Json };
+            request.AddBody(category);
+            var response = restClient.ExecuteAsync<CategorieModel>(request);
+
+            Console.WriteLine(response);
         }
 
         public void Delete(int id)

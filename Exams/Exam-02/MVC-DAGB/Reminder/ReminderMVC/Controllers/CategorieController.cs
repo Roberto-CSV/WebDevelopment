@@ -37,10 +37,11 @@ namespace ReminderMVC.Controllers
         // POST: CategorieController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(CategorieModel category)
         {
             try
             {
+                _categorieService.Add(category);
                 return RedirectToAction(nameof(Index));
             }
             catch
