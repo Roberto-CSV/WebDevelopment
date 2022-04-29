@@ -114,4 +114,4 @@ C:\Users\David\Escritorio\Semestre_X\Des.Web\Repositorio\Exams\Exam-02\MVC-DAGB\
 C:\Users\David\Escritorio\Semestre_X\Des.Web\Repositorio\Exams\Exam-02\MVC-DAGB\Reminder\ReminderMVC\obj\Debug\net5.0\ReminderMVC.pdb
 C:\Users\David\Escritorio\Semestre_X\Des.Web\Repositorio\Exams\Exam-02\MVC-DAGB\Reminder\ReminderMVC\obj\Debug\net5.0\ReminderMVC.genruntimeconfig.cache
 C:\Users\David\Escritorio\Semestre_X\Des.Web\Repositorio\Exams\Exam-02\MVC-DAGB\Reminder\ReminderMVC\obj\Debug\net5.0\ref\ReminderMVC.dll
-C:\Users\David\Escritorio\Semestre_X\Des.Web\Repositorio\Exams\Exam-02\MVC-DAGB\Reminder\ReminderMVC\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.cs
+C:\Users\David\Escritorio\Semestre_X\Des.Web\Repositorio\Exams\Exam-02\MVC-DAGB\Reminder\ReminderMVC\obj\Debug\net5.0\Razor\Views\Categorie\Index.cshtml.g.cs
