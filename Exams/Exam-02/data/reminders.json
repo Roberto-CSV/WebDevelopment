@@ -10,17 +10,35 @@
     },
     {
       "id": 3,
-      "description": "Cumpleaños"
+      "description": "test edit"
     }
   ],
   "reminders": [
     {
       "id": 1,
-      "categoryId": 1,
+      "categoryId": "1",
       "description": "Pago de deudas",
       "startDate": "2022-04-01",
       "cronExpression": " * * * * 1",
       "numberOfTimes": 5,
+      "enabled": true
+    },
+    {
+      "id": 234,
+      "categoryId": "2",
+      "description": "aaaaaa",
+      "startDate": "2022-05-01T12:44:00",
+      "cronExpression": "***1",
+      "numberOfTimes": 13,
+      "enabled": true
+    },
+    {
+      "id": 123,
+      "categoryId": "3",
+      "description": "TEST REMIN EDIT",
+      "startDate": "2022-05-01T13:40:00",
+      "cronExpression": "***1",
+      "numberOfTimes": 213,
       "enabled": true
     }
   ]

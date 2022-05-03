@@ -90,7 +90,7 @@ namespace PracticeMVC.Controllers
         // GET: PersonController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            return View(_personService.GetById(id));
         }
 
         // POST: PersonController/Delete/5
