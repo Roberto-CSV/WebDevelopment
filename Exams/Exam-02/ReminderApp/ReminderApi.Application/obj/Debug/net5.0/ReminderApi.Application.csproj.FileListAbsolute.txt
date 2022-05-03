@@ -1,0 +1,15 @@
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Application\bin\Debug\net5.0\ReminderApi.Application.deps.json
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Application\bin\Debug\net5.0\ReminderApi.Application.dll
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Application\bin\Debug\net5.0\ReminderApi.Application.pdb
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Application\bin\Debug\net5.0\ReminderApi.Domain.dll
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Application\bin\Debug\net5.0\ReminderApi.Domain.pdb
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Application\obj\Debug\net5.0\ReminderApi.Application.csproj.AssemblyReference.cache
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Application\obj\Debug\net5.0\ReminderApi.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Application\obj\Debug\net5.0\ReminderApi.Application.AssemblyInfoInputs.cache
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Application\obj\Debug\net5.0\ReminderApi.Application.AssemblyInfo.cs
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Application\obj\Debug\net5.0\ReminderApi.Application.csproj.CoreCompileInputs.cache
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Application\obj\Debug\net5.0\ReminderApi.Application.csproj.CopyComplete
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Application\obj\Debug\net5.0\ReminderApi.Application.dll
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Application\obj\Debug\net5.0\refint\ReminderApi.Application.dll
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Application\obj\Debug\net5.0\ReminderApi.Application.pdb
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Application\obj\Debug\net5.0\ref\ReminderApi.Application.dll

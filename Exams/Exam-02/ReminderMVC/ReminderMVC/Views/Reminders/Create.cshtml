@@ -1,0 +1,570 @@
+﻿@model ReminderMVC.Models.Reminder
+
+@{
+ViewData["Title"] = "Reminder Create";
+}
+
+<h1>Create</h1>
+
+<h4>Reminder</h4>
+<hr />
+<div class="row mb-5">
+    <div class="col-md-8">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input value="Id" type="hidden" />
+            <div class="form-group">
+                <label asp-for="CategoryId" class="control-label"></label>
+                <input asp-for="CategoryId" class="form-control" />
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StartDate" class="control-label"></label>
+                <input asp-for="StartDate" class="form-control" />
+                <span asp-validation-for="StartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CronExpression" class="control-label"></label>
+                <input asp-for="CronExpression" class="form-control" />
+                <span asp-validation-for="CronExpression" class="text-danger"></span>
+                <!-- Nav  -->
+                <ul class="nav nav-tabs my-2">
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#segundos">Segundos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#minutos">Minutos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#horas">Horas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#dia">Dia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#mes">Mes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#anio">Año</a>
+                    </li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content py-2">
+                    <!--SEGUNDOS-->
+                    <div class="tab-pane container active" id="segundos">
+                      <!--Every-->
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronEverySecond" name="cronSecond" checked="checked">
+                            <label for="cronEverySecond" class="nofloat">Every second</label>
+                        </div>
+                        <!--Select-->
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronSecondIncrement" name="cronSecond">
+                            <label for="cronSecondIncrement" class="nofloat">Every
+                                <select id="cronSecondIncrementIncrement" style="width:50px;">
+                                    @for (var second = 0; second <= 59; second++) { 
+                                        <option value="{@second}">@second</option>
+                                        }
+                                </select> second(s) starting at second
+                                <select id="cronSecondIncrementStart" style="width:50px;">
+                                    @for (var second = 0; second <= 59; second++) { 
+                                        <option value="{@second}">@second</option>
+                                        }
+                                </select>
+                            </label>
+                        </div>
+                        <!--Table-->
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronSecondSpecific" name="cronSecond">
+                            <label for="cronSecondSpecific" class="nofloat">Specific second (choose one or many)</label>
+                            <div style="margin-left:50px;">
+                                @for (var second = 0; second <= 59; second++) { 
+                                    <label label for="cronSecond{@second}">@second</label>
+                                    @if (second == 0)
+                                    {
+                                    <input type="checkbox" id="cronSecond{@second}" name="cronSecondSpecificSpecific" value="{@second}"
+                                        checked="checked">
+                                    } else {
+                                    <input type="checkbox" id="cronSecond{@second}" name="cronSecondSpecificSpecific" value="{@second}">
+                                    }
+                                    }
+                            </div>
+                        </div>
+                        <!--Between-->
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronSecondRange" name="cronSecond">
+                            <label for="cronSecondRange" class="nofloat">Every second between second
+                                <select id="cronSecondRangeStart" style="width:50px;">
+                                    @for (var second = 0; second <= 59; second++) { 
+                                        <option value="{@second}">@second</option>
+                                        }
+                                </select>
+                                and second
+                                <select id="cronSecondRangeEnd" style="width:50px;">
+                                    @for (var second = 0; second <= 59; second++) { 
+                                        <option value="{@second}">@second</option>
+                                        }
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--MINUTOS-->
+                    <div class="tab-pane container fade" id="minutos">
+                        <!--Every-->
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronEveryMinute" name="cronMinute" checked="checked">
+                            <label for="cronEveryMinute">Every minute</label>
+                        </div>
+                        <!--Select-->
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronMinuteIncrement" name="cronMinute" checked="checked">
+                            <label for="cronMinuteIncrement" class="nofloat">Every
+                                <select id="cronMinuteIncrementIncrement" style="width:50px;">
+                                    @for (var minute = 0; minute <= 59; minute++) { 
+                                        <option value="{@minute}">@minute</option>
+                                        }
+                                </select> minute(s) starting at minute
+                                <select id="cronMinuteIncrementStart" style="width:50px;">
+                                    @for (var minute = 0; minute <= 59; minute++) { 
+                                        <option value="{@minute}">@minute</option>
+                                        }
+                                </select>
+                            </label>
+                        </div>
+                        <!--Table-->
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronMinuteSpecific" checked="checked" name="cronMinute">
+                            <label for="cronMinuteSpecific">Specific minute (choose one or many)</label>
+                            <div style="margin-left:50px;">
+                                <div>
+                                    @for (var minute = 0; minute <= 59; minute++) { 
+                                        <label label for="cronMinute{@minute}">@minute</label>
+                                        @if (minute == 0)
+                                        {
+                                        <input type="checkbox" id="cronMinute{@minute}" name="cronMinuteSpecificSpecific" value="{@minute}"
+                                            checked="checked">
+                                        } else {
+                                        <input type="checkbox" id="cronMinute{@minute}" name="cronMinuteSpecificSpecific" value="{@minute}">
+                                        }
+                                     }
+                                </div>
+                            </div>
+                        </div>
+                        <!--Between-->
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronMinuteRange" name="cronMinute" checked="checked">
+                            <label for="cronMinuteRange">Every minute between minute
+                                <select id="cronMinuteRangeStart" style="width:50px;">
+                                    @for (var minute = 0; minute <= 59; minute++) { 
+                                        <option value="{@minute}">@minute</option>
+                                        }
+                                </select>
+                                and minute
+                                <select id="cronMinuteRangeEnd" style="width:50px;">
+                                    @for (var minute = 0; minute <= 59; minute++) { 
+                                        <option value="{@minute}">@minute</option>
+                                        }
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+    
+                    <!--HORAS-->
+                    <div class="tab-pane container fade" id="horas">
+                        <!--Every-->
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronEveryHour" name="cronHour" checked="checked">
+                            <label for="cronEveryHour" class="nofloat">Every hour</label>
+                        </div>
+                        <!--Select-->
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronHourIncrement" name="cronHour" checked="checked">
+                            <label for="cronHourIncrement" class="nofloat">Every
+                                <select id="cronHourIncrementIncrement" style="width:50px;">
+                                    @for (var hour = 0; hour <= 23; hour++) { 
+                                        <option value="{@hour}">@hour</option>
+                                        }
+                                </select> hour(s) starting at hour
+                                <select id="cronHourIncrementStart" style="width:50px;">
+                                    @for (var hour = 0; hour <= 23; hour++) { 
+                                        <option value="{@hour}">@hour</option>
+                                        }
+                                </select>
+                            </label>
+                        </div>
+                        <!--Table-->
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronHourSpecific" checked="checked" name="cronHour">
+                            <label for="cronHourSpecific" class="nofloat">Specific hour (choose one or many)</label>
+                            <div style="margin-left:50px;">
+                                @for (var hour = 0; hour <= 59; hour++) { 
+                                    <label label for="cronHour{@hour}">@hour</label>
+                                    @if (hour == 0)
+                                    {
+                                    <input type="checkbox" id="cronHour{@hour}" name="cronHourSpecificSpecific" value="{@hour}"
+                                        checked="checked">
+                                    } else {
+                                    <input type="checkbox" id="cronHour{@hour}" name="cronHourSpecificSpecific" value="{@hour}">
+                                    }
+                                    }
+                            </div>
+                        </div>
+                        <!--Between-->
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronHourRange" name="cronHour" checked="checked">
+                            <label for="cronHourRange">Every hour between hour
+                                <select id="cronHourRangeStart" style="width:50px;">
+                                    @for (var hour = 0; hour <= 23; hour++) { 
+                                        <option value="{@hour}">@hour</option>
+                                        }
+                                </select>
+                                and hour
+                                <select id="cronHourRangeEnd" style="width:50px;">
+                                    @for (var hour = 0; hour <= 23; hour++) { 
+                                        <option value="{@hour}">@hour</option>
+                                        }
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--DIA-->
+                    <div class="tab-pane container fade" id="dia">
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronEveryDay" name="cronDay" checked="checked">
+                            <label for="cronEveryDay" class="nofloat">Every day</label>
+                        </div>
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronDowIncrement" name="cronDay">
+                            <label for="cronDowIncrement" class="nofloat">Every
+                                <select id="cronDowIncrementIncrement" style="width:50px;">
+                                    @for (var day = 0; day <= 7; day++) { 
+                                            <option value="{@day}">@day</option>
+                                            }
+                                </select> day(s) starting on
+                                <select id="cronDowIncrementStart" style="width:125px;">
+                                    @for (var day = 0; day <= 7; day++) { 
+                                            <option value="{@day}">@day</option>
+                                            }
+                                </select>
+                            </label>
+                        </div>
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronDomIncrement" name="cronDay">
+                            <label for="cronDomIncrement" class="nofloat">Every
+                                <select id="cronDomIncrementIncrement" style="width:50px;">
+                                    @for (var day = 0; day <= 31; day++) { 
+                                            <option value="{@day}">@day</option>
+                                            }
+                                </select> day(s) starting on the
+                                <select id="cronDomIncrementStart" style="width:50px;">
+                                    @for (var day = 0; day <= 31; day++) { 
+                                        <option value="{@day}">@day</option>
+                                        }
+                                </select>
+                                of the month
+                            </label>
+                        </div>
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronDowSpecific" name="cronDay">
+                            <label for="cronDowSpecific" class="nofloat">Specific day of week (choose one or many)</label>
+                            <div style="margin-left:50px;">
+                                <label for="cronDowSun" class="nofloat">Sunday</label>
+                                <input type="checkbox" id="cronDowSun" name="cronDowSpecificSpecific" value="SUN">
+                                <label for="cronDowMon" class="nofloat">Monday</label>
+                                <input type="checkbox" id="cronDowMon" name="cronDowSpecificSpecific" value="MON">
+                                <label for="cronDowTue" class="nofloat">Tuesday</label>
+                                <input type="checkbox" id="cronDowTue" name="cronDowSpecificSpecific" value="TUE">
+                                <label for="cronDowWed" class="nofloat">Wednesday</label>
+                                <input type="checkbox" id="cronDowWed" name="cronDowSpecificSpecific" value="WED">
+                                <label for="cronDowThu" class="nofloat">Thursday</label>
+                                <input type="checkbox" id="cronDowThu" name="cronDowSpecificSpecific" value="THU">
+                                <label for="cronDowFri" class="nofloat">Friday</label>
+                                <input type="checkbox" id="cronDowFri" name="cronDowSpecificSpecific" value="FRI">
+                                <label for="cronDowSat" class="nofloat">Saturday</label>
+                                <input type="checkbox" id="cronDowSat" name="cronDowSpecificSpecific" value="SAT">
+                            </div>
+                        </div>
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronDomSpecific" name="cronDay">
+                            <label for="cronDomSpecific" class="nofloat">Specific day of month (choose one or many)</label>
+                            <div style="margin-left:50px;">
+                                <div>
+                                    @for (var hour = 1; hour <= 31; hour++) { 
+                                        <label label for="cronDom{@hour}">@hour</label>
+                                        <input type="checkbox" id="cronDom{@hour}" name="cronDomSpecificSpecific" value="{@hour}">
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronLastDayOfMonth" name="cronDay">
+                            <label for="cronLastDayOfMonth" class="nofloat">On the last day of the month</label>
+                        </div>
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronLastWeekdayOfMonth" name="cronDay">
+                            <label for="cronLastWeekdayOfMonth" class="nofloat">On the last weekday of the month</label>
+                        </div>
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronLastSpecificDom" name="cronDay">
+                            <label for="cronLastSpecificDom" class="nofloat">On the last
+                                <select id="cronLastSpecificDomDay" style="width:125px;">
+                                    <option value="1">Sunday</option>
+                                    <option value="2">Monday</option>
+                                    <option value="3">Tuesday</option>
+                                    <option value="4">Wednesday</option>
+                                    <option value="5">Thursday</option>
+                                    <option value="6">Friday</option>
+                                    <option value="7">Saturday</option>
+                                </select>
+                                of the month
+                            </label>
+                        </div>
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronDaysBeforeEom" name="cronDay">
+                            <label for="cronDaysBeforeEom" class="nofloat">
+                                <select id="cronDaysBeforeEomMinus" style="width:50px;">
+                                    @for (var day = 0; day <= 31; day++) { 
+                                        <option value="{@day}">@day</option>
+                                        }
+                                </select> day(s) before the end of the month
+                            </label>
+                        </div>
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronDaysNearestWeekdayEom" name="cronDay">
+                            <label for="cronDaysNearestWeekdayEom" class="nofloat">
+                                Nearest weekday (Monday to Friday) to the
+                                <select id="cronDaysNearestWeekday" style="width:50px;">
+                                    @for (var day = 0; day <= 31; day++) { 
+                                        <option value="{@day}">@day</option>
+                                        }
+                                </select> of the month
+                            </label>
+                        </div>
+
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronNthDay" name="cronDay">
+                            <label for="cronNthDay" class="nofloat">
+                                On the
+                                <select id="cronNthDayNth" style="width:50px;">
+                                    @for (var day = 0; day <= 5; day++) { 
+                                        <option value="{@day}">@day</option>
+                                        }
+                                </select>
+                                <select id="cronNthDayDay" style="width:125px;">
+                                    <option value="1">Sunday</option>
+                                    <option value="2">Monday</option>
+                                    <option value="3">Tuesday</option>
+                                    <option value="4">Wednesday</option>
+                                    <option value="5">Thursday</option>
+                                    <option value="6">Friday</option>
+                                    <option value="7">Saturday</option>
+                                </select>
+                                of the month
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--MES-->
+                    <div class="tab-pane container fade" id="mes">
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronEveryMonth" name="cronMonth" checked="checked">
+                            <label for="cronEveryMonth" class="nofloat">Every month</label>
+                        </div>
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronMonthIncrement" name="cronMonth">
+                            <label for="cronMonthIncrement" class="nofloat">Every
+                                <select id="cronMonthIncrementIncrement" style="width:50px;">
+                                    @for (var hour = 0; hour <= 12; hour++) { 
+                                            <option value="{@hour}">@hour</option>
+                                            }
+                                </select> month(s) starting in
+                                <select id="cronMonthIncrementStart" style="width:125px;">
+                                    <option value="1">January</option>
+                                    <option value="2">February</option>
+                                    <option value="3">March</option>
+                                    <option value="4">April</option>
+                                    <option value="5">May</option>
+                                    <option value="6">June</option>
+                                    <option value="7">July</option>
+                                    <option value="8">August</option>
+                                    <option value="9">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronMonthSpecific" name="cronMonth">
+                            <label for="cronMonthSpecific" class="nofloat">Specific month (choose one or many)</label>
+                            <div style="margin-left:50px;">
+                                <div>
+                                    <div>
+                                        <label for="cronMonth1" class="nofloat">January&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                        <input type="checkbox" id="cronMonth1" name="cronMonthSpecificSpecific" value="JAN">
+
+                                        <label for="cronMonth2" class="nofloat">February&nbsp;&nbsp;</label>
+                                        <input type="checkbox" id="cronMonth2" name="cronMonthSpecificSpecific" value="FEB">
+
+                                        <label for="cronMonth3" class="nofloat">March</label>
+                                        <input type="checkbox" id="cronMonth3" name="cronMonthSpecificSpecific" value="MAR">
+
+                                        <label for="cronMonth4" class="nofloat">April</label>
+                                        <input type="checkbox" id="cronMonth4" name="cronMonthSpecificSpecific" value="APR">
+
+                                        <label for="cronMonth5" class="nofloat">May</label>
+                                        <input type="checkbox" id="cronMonth5" name="cronMonthSpecificSpecific" value="MAY">
+
+                                        <label for="cronMonth6" class="nofloat">June</label>
+                                        <input type="checkbox" id="cronMonth6" name="cronMonthSpecificSpecific" value="JUN">
+
+                                        <label for="cronMonth7" class="nofloat">July</label>
+                                        <input type="checkbox" id="cronMonth7" name="cronMonthSpecificSpecific" value="JUL">
+
+                                        <label for="cronMonth8" class="nofloat">August</label>
+                                        <input type="checkbox" id="cronMonth8" name="cronMonthSpecificSpecific" value="AUG">
+
+                                        <label for="cronMonth9" class="nofloat">September</label>
+                                        <input type="checkbox" id="cronMonth0" name="cronMonthSpecificSpecific" value="SEP">
+
+                                        <label for="cronMonth10" class="nofloat">October</label>
+                                        <input type="checkbox" id="cronMonth10" name="cronMonthSpecificSpecific" value="OCT">
+                                    </div>
+                                    <div>
+                                        <label for="cronMonth11" class="nofloat">November</label>
+                                        <input type="checkbox" id="cronMonth11" name="cronMonthSpecificSpecific" value="NOV">
+
+                                        <label for="cronMonth12" class="nofloat">December</label>
+                                        <input type="checkbox" id="cronMonth12" name="cronMonthSpecificSpecific" value="DEC">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronMonthRange" name="cronMonth">
+                            <label for="cronMonthRange" class="nofloat">
+                                Every month between
+                                <select id="cronMonthRangeStart" style="width:125px;">
+                                    <option value="1" selected="">January</option>
+                                    <option value="2">February</option>
+                                    <option value="3">March</option>
+                                    <option value="4">April</option>
+                                    <option value="5">May</option>
+                                    <option value="6">June</option>
+                                    <option value="7">July</option>
+                                    <option value="8">August</option>
+                                    <option value="9">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select>
+                                and
+                                <select id="cronMonthRangeEnd" style="width:125px;">
+                                    <option value="1">January</option>
+                                    <option value="2">February</option>
+                                    <option value="3">March</option>
+                                    <option value="4">April</option>
+                                    <option value="5">May</option>
+                                    <option value="6">June</option>
+                                    <option value="7">July</option>
+                                    <option value="8">August</option>
+                                    <option value="9">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12" selected="">December</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!--AÑO-->
+                    <div class="tab-pane container fade" id="anio">
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronEveryYear" name="cronYear" checked="checked">
+                            <label for="cronEveryYear" class="nofloat">Any year</label>
+                        </div>
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronYearIncrement" name="cronYear">
+                            <label for="cronYearIncrement" class="nofloat">Every
+                                <select id="cronYearIncrementIncrement" style="width:50px;">
+                                    @for (var hour = 1; hour <= 83; hour++) { 
+                                            <option value="{@hour}">@hour</option>
+                                            }
+                                </select> years(s) starting in
+                                <select id="cronYearIncrementStart" style="width:80px;">
+                                    @for (var year = int.Parse(DateTime.Now.ToString("yyyy")); year <= int.Parse(DateTime.Now.ToString("yyyy")) + 100; year++) { 
+                                            <option value="{@year}">@year</option>
+                                            }
+                                </select>
+                            </label>
+                        </div>
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronYearSpecific" name="cronYear">
+                            <label for="cronYearSpecific" class="nofloat">Specific year (choose one or many)</label>
+                            <div style="margin-left:50px;">
+                                <div>
+                                    @for (var year = int.Parse(DateTime.Now.ToString("yyyy")); year <= int.Parse(DateTime.Now.ToString("yyyy")) + 100; year++) { 
+                                        <label label for="cronYear{@year}">@year</label>
+                                        <input type="checkbox" id="cronYear{@year}" name="cronYearSpecificSpecific" value="{@year}">
+                                        }
+                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cron-option" style="padding-bottom:10px">
+                            <input type="radio" id="cronYearRange" name="cronYear">
+                            <label for="cronYearRange" class="nofloat">
+                                Every year between
+                                <select id="cronYearRangeStart" style="width:80px;">
+                                    @for (var year = int.Parse(DateTime.Now.ToString("yyyy")); year <= int.Parse(DateTime.Now.ToString("yyyy")) + 100; year++) { 
+                                            <option value="{@year}">@year</option>
+                                            }
+                                </select>
+                                and
+                                <select id="cronYearRangeEnd" style="width:80px;">
+                                    @for (var year = int.Parse(DateTime.Now.ToString("yyyy")); year <= int.Parse(DateTime.Now.ToString("yyyy")) + 100; year++) { 
+                                            <option value="{@year}">@year</option>
+                                            }
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumberOfTimes" class="control-label"></label>
+                <input asp-for="NumberOfTimes" class="form-control" />
+                <span asp-validation-for="NumberOfTimes" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Enabled" /> @Html.DisplayNameFor(model => model.Enabled)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-outline-info">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        $(document).ready(function() {
+          $('#s').click(function(){
+            $('#a').click();
+          });
+        });
+	</script>
+}

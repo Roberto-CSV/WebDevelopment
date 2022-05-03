@@ -1,0 +1,15 @@
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Infrastructure\bin\Debug\net5.0\ReminderApi.Infrastructure.deps.json
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Infrastructure\bin\Debug\net5.0\ReminderApi.Infrastructure.dll
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Infrastructure\bin\Debug\net5.0\ReminderApi.Infrastructure.pdb
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Infrastructure\bin\Debug\net5.0\ReminderApi.Domain.dll
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Infrastructure\bin\Debug\net5.0\ReminderApi.Domain.pdb
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Infrastructure\obj\Debug\net5.0\ReminderApi.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Infrastructure\obj\Debug\net5.0\ReminderApi.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Infrastructure\obj\Debug\net5.0\ReminderApi.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Infrastructure\obj\Debug\net5.0\ReminderApi.Infrastructure.AssemblyInfo.cs
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Infrastructure\obj\Debug\net5.0\ReminderApi.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Infrastructure\obj\Debug\net5.0\ReminderApi.Infrastructure.csproj.CopyComplete
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Infrastructure\obj\Debug\net5.0\ReminderApi.Infrastructure.dll
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Infrastructure\obj\Debug\net5.0\refint\ReminderApi.Infrastructure.dll
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Infrastructure\obj\Debug\net5.0\ReminderApi.Infrastructure.pdb
+C:\Users\Salas\Documents\GitHub\ServicesDevelopment\Exams\Exam-02\ReminderApp\ReminderApi.Infrastructure\obj\Debug\net5.0\ref\ReminderApi.Infrastructure.dll

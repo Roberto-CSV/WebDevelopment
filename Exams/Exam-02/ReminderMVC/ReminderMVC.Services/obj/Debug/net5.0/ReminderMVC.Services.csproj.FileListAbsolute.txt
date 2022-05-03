@@ -1,0 +1,12 @@
+C:\Users\Salas\Documents\GitHub\WebDevelopment\Exams\Exam-02\ReminderMVC\ReminderMVC.Services\bin\Debug\net5.0\ReminderMVC.Services.deps.json
+C:\Users\Salas\Documents\GitHub\WebDevelopment\Exams\Exam-02\ReminderMVC\ReminderMVC.Services\bin\Debug\net5.0\ReminderMVC.Services.dll
+C:\Users\Salas\Documents\GitHub\WebDevelopment\Exams\Exam-02\ReminderMVC\ReminderMVC.Services\bin\Debug\net5.0\ReminderMVC.Services.pdb
+C:\Users\Salas\Documents\GitHub\WebDevelopment\Exams\Exam-02\ReminderMVC\ReminderMVC.Services\obj\Debug\net5.0\ReminderMVC.Services.csproj.AssemblyReference.cache
+C:\Users\Salas\Documents\GitHub\WebDevelopment\Exams\Exam-02\ReminderMVC\ReminderMVC.Services\obj\Debug\net5.0\ReminderMVC.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Salas\Documents\GitHub\WebDevelopment\Exams\Exam-02\ReminderMVC\ReminderMVC.Services\obj\Debug\net5.0\ReminderMVC.Services.AssemblyInfoInputs.cache
+C:\Users\Salas\Documents\GitHub\WebDevelopment\Exams\Exam-02\ReminderMVC\ReminderMVC.Services\obj\Debug\net5.0\ReminderMVC.Services.AssemblyInfo.cs
+C:\Users\Salas\Documents\GitHub\WebDevelopment\Exams\Exam-02\ReminderMVC\ReminderMVC.Services\obj\Debug\net5.0\ReminderMVC.Services.csproj.CoreCompileInputs.cache
+C:\Users\Salas\Documents\GitHub\WebDevelopment\Exams\Exam-02\ReminderMVC\ReminderMVC.Services\obj\Debug\net5.0\ReminderMVC.Services.dll
+C:\Users\Salas\Documents\GitHub\WebDevelopment\Exams\Exam-02\ReminderMVC\ReminderMVC.Services\obj\Debug\net5.0\refint\ReminderMVC.Services.dll
+C:\Users\Salas\Documents\GitHub\WebDevelopment\Exams\Exam-02\ReminderMVC\ReminderMVC.Services\obj\Debug\net5.0\ReminderMVC.Services.pdb
+C:\Users\Salas\Documents\GitHub\WebDevelopment\Exams\Exam-02\ReminderMVC\ReminderMVC.Services\obj\Debug\net5.0\ref\ReminderMVC.Services.dll

@@ -1,0 +1,51 @@
+﻿@model IEnumerable<ReminderMVC.Models.Category>
+
+@{
+    ViewData["Title"] = "Category List";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success"><i class="fas fa-plus"></i> Create New</a>
+</p>
+<table class="table" id="categoryTable">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                <a asp-controller="Reminders" asp-action="RemindersByCategory" asp-route-categoryId="@item.Id" style="text-decoration: none; color: black;">
+                    @Html.DisplayFor(modelItem => item.Description)
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-outline-primary" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                <a class="btn btn-outline-info" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                <a class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}   
+    </tbody>
+</table>
+
+@section Scripts{
+	<script>
+		$(document).ready( function () {
+		    $('#categoryTable').DataTable();
+		});
+	</script>
+}
