@@ -1,0 +1,33 @@
+﻿@model ReminderMVC.Models.CategorieModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div style="text-align: center">
+    <h1>Details</h1>
+
+<div>
+    <h4>Categorie</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-6 text-right">
+            @Html.DisplayNameFor(model => model.Id):
+        </dt>
+        <dd class = "col-sm-6 text-left">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class = "col-sm-6 text-right">
+            @Html.DisplayNameFor(model => model.Description):
+        </dt>
+        <dd class = "col-sm-6 text-left">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-outline-info btn-sm" asp-action="Index">Back to List</a>
+</div>
+
+</div>
+

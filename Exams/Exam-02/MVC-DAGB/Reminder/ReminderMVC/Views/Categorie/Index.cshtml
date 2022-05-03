@@ -1,0 +1,54 @@
+﻿@model IEnumerable<ReminderMVC.Models.CategorieModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container">
+    <h1>Categories List</h1>
+    <p style="text-align:center">
+        <a asp-action="Create" class="btn btn-success"><i class="fas fa-plus"></i> Create New</a>
+    </p>
+</div>
+
+<div class="container">
+    <table class="table table-bordered" id="categoriesTable" style="text-align: center" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td style="font-weight:bold; color: orangered">
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        <a class="btn btn-outline-primary" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                        <a class="btn btn-outline-info" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                        <a class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts{
+	<script>
+		$(document).ready( function () {
+		    $('#categoriesTable').DataTable();
+		} );
+	</script>
+}

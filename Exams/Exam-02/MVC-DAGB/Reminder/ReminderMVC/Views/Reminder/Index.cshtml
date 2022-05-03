@@ -1,0 +1,84 @@
+﻿@model IEnumerable<ReminderMVC.Models.ReminderModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container">
+    <h1>Reminders</h1>
+    <p style="text-align:center">
+        <a asp-action="Create" class="btn btn-success"><i class="fas fa-plus"></i> Create New</a>
+    </p>
+</div>
+
+<div class="container">
+    <table class="table table-bordered" id="reminderTable" style="text-align: center" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CategoryId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.StartDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CronExpression)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NumberOfTimes)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Enabled)
+                </th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td class="align-middle" style="font-weight:bold; color: orangered">
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td class="align-middle">
+                        @Html.DisplayFor(modelItem => item.CategoryId)
+                    </td>
+                    <td class="align-middle">
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td class="align-middle">
+                        @Html.DisplayFor(modelItem => item.StartDate)
+                    </td>
+                    <td class="align-middle">
+                        @Html.DisplayFor(modelItem => item.CronExpression)
+                    </td>
+                    <td class="align-middle">
+                        ( @Html.DisplayFor(modelItem => item.NumberOfTimes) )
+                    </td>
+                    <td class="align-middle">
+                        ( @Html.DisplayFor(modelItem => item.Enabled) )
+                    </td>
+                    <td class="btn-group-vertical border-bottom">
+                        <a class="btn btn-outline-primary m-1 rounded" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                        <a class="btn btn-outline-info m-1 rounded" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                        <a class="btn btn-outline-danger m-1 rounded" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts{
+	<script>
+		$(document).ready( function () {
+		    $('#reminderTable').DataTable();
+		} );
+	</script>
+}
