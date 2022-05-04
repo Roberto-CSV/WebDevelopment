@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\clavi\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\clavi\\.nuget\\packages"
+    ]
+  }
+}

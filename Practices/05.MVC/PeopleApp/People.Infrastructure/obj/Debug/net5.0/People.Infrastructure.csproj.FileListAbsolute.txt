@@ -1,0 +1,17 @@
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Infrastructure\bin\Debug\net5.0\People.Infrastructure.deps.json
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Infrastructure\bin\Debug\net5.0\People.Infrastructure.dll
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Infrastructure\bin\Debug\net5.0\People.Infrastructure.pdb
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Infrastructure\bin\Debug\net5.0\People.Application.dll
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Infrastructure\bin\Debug\net5.0\People.Domain.dll
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Infrastructure\bin\Debug\net5.0\People.Application.pdb
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Infrastructure\bin\Debug\net5.0\People.Domain.pdb
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Infrastructure\obj\Debug\net5.0\People.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Infrastructure\obj\Debug\net5.0\People.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Infrastructure\obj\Debug\net5.0\People.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Infrastructure\obj\Debug\net5.0\People.Infrastructure.AssemblyInfo.cs
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Infrastructure\obj\Debug\net5.0\People.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Infrastructure\obj\Debug\net5.0\People.Infrastructure.csproj.CopyComplete
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Infrastructure\obj\Debug\net5.0\People.Infrastructure.dll
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Infrastructure\obj\Debug\net5.0\refint\People.Infrastructure.dll
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Infrastructure\obj\Debug\net5.0\People.Infrastructure.pdb
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Infrastructure\obj\Debug\net5.0\ref\People.Infrastructure.dll

@@ -1,0 +1,12 @@
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Domain\bin\Debug\net5.0\People.Domain.deps.json
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Domain\bin\Debug\net5.0\People.Domain.dll
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Domain\bin\Debug\net5.0\People.Domain.pdb
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Domain\obj\Debug\net5.0\People.Domain.csproj.AssemblyReference.cache
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Domain\obj\Debug\net5.0\People.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Domain\obj\Debug\net5.0\People.Domain.AssemblyInfoInputs.cache
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Domain\obj\Debug\net5.0\People.Domain.AssemblyInfo.cs
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Domain\obj\Debug\net5.0\People.Domain.csproj.CoreCompileInputs.cache
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Domain\obj\Debug\net5.0\People.Domain.dll
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Domain\obj\Debug\net5.0\refint\People.Domain.dll
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Domain\obj\Debug\net5.0\People.Domain.pdb
+C:\Users\clavi\Documents\GitHub\WebDevelopment\Practices\05.MVC\PeopleApp\People.Domain\obj\Debug\net5.0\ref\People.Domain.dll

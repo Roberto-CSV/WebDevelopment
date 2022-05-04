@@ -1,0 +1,84 @@
+﻿@model IEnumerable<ReminderMVC.Models.ReminderModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Reminders</h1>
+
+<p>
+   <a asp-action="Create" class="btn btn-success"><i class="fas fa-plus"></i> Create New</a>
+</p>
+
+<div class="container">
+
+    <table class="table table-bordered" id="usersTable" width="100%" cellspacing="0">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CategoryId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.StartDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CronExpression)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NumberOfTimes)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Enabled)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoryId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StartDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CronExpression)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumberOfTimes)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Enabled)
+                </td>
+                <td>
+                    <a class="btn btn-outline-primary " asp-action="Edit" asp-route-id="@item.id">Edit</a>
+                    <a class="btn btn-outline-info" asp-action="Details" asp-route-id="@item.id">Details</a>
+                    <a class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@item.id">Delete</a>
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>
+</div>
+
+
+@section scripts
+{
+    <!--Include cron.js and _Templates for Cron Widgit-->
+    <script src="~/Scripts/app/cron.js"></script>
+    <script src="~/Scripts/app/app.js"></script>
+}
+

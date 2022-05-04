@@ -1,0 +1,82 @@
+﻿@model IEnumerable<ReminderMVC.Models.ReminderModel>
+
+@{
+ ViewBag.Title = "ReminderByCategoryId";
+}
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CronExpression)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfTimes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Enabled)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+    @foreach (var rem in Model) {
+            <tr>
+                <td>
+                    @rem.id
+                </td>
+                <td>
+                    @rem.CategoryId
+                </td>
+                <td>
+                    @rem.Description
+                </td>
+                <td>
+                    @rem.StartDate
+                </td>
+                <td>
+                    @rem.CronExpression
+                </td>
+                <td>
+                    @rem.NumberOfTimes
+                </td>
+                <td>
+                    @rem.Enabled
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id=rem.id }) |
+                    @Html.ActionLink("Details", "Details", new {  id=rem.id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=rem.id }) 
+                </td>
+            </tr>
+    }
+
+
+
+
+        </tbody>
+    </table>
+
+
+
+ 
+
+
+<div>
+    <a asp-action="Index" class="btn btn-dark">Back to List</a>
+</div>
